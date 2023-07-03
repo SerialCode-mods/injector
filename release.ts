@@ -17,6 +17,7 @@ const args = yargs(hideBin(process.argv))
 const adm = new AdmZip();
 adm.addLocalFolder('./modules', 'python-packages');
 adm.addLocalFolder('./assets', `mods/${config.injected_name}`);
-// @ts-expect-error - find correct types for args.include
-adm.addLocalFolder(resolve(process.cwd(), args.include, 'assets'), `mods/${args._[0]}`);
+
+if (args.include && typeof args.include === 'string') adm.addLocalFolder(resolve(process.cwd(), args.include, 'assets'), `mods/${args._[0]}`);
+
 adm.writeZip(`./build/${config.name} Mod ${config.versions.mod} for ${config.versions.game}.zip`);
