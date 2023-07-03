@@ -1,8 +1,8 @@
 {
-  "name": "Template",
-  "injected_name": "template",
+  "name": "Injector",
+  "injected_name": "injector",
   "versions": {
     "mod": "0.1",
-    "game": "0.1"
+    "game": "0.4b"
   }
 }
