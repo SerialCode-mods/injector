@@ -1,8 +1,8 @@
 {
-    "name": "Template",
-    "injected_name": "template",
-    "versions": {
-        "mod": "0.1",
-        "game": "0.1"
-    }
+  "name": "Template",
+  "injected_name": "template",
+  "versions": {
+    "mod": "0.1",
+    "game": "0.1"
+  }
 }
