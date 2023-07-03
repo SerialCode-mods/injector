@@ -20,7 +20,7 @@ const isString = (text: unknown): text is string => typeof text === 'string';
 const adm = new AdmZip();
 adm.addLocalFolder(
   './modules',
-  resolve('python-packages', config.injected_name)
+  `python-packages/${config.injected_name}`
 );
 adm.addLocalFolder('./assets', `mods/${config.injected_name}`);
 
