@@ -4,3 +4,5 @@ node_modules/
 # Artifacts
 build/
 *.zip
+
+bun.lockb
