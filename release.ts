@@ -40,4 +40,4 @@ const buildName = [
 if (isPartOfBundle)
   adm.addLocalFolder(resolve(process.cwd(), include, "assets"), `mods/${name}`);
 
-adm.writeZip(resolve(process.cwd(), buildName.join("")));
+adm.writeZip(resolve(process.cwd(), "build", `${buildName.join(" ")}.zip`));
